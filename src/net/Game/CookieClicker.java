@@ -1,15 +1,23 @@
 package net.Game;
 
-public class BigCookie {
+import net.Periodic.Calculate;
+import net.Store.Cursor;
+import net.Store.Grandma;
+import net.Store.Item;
+
+public class CookieClicker {
     private static String playerID;
     public static double cookies;
+    public static Cursor cursor = new Cursor();
+    public static Grandma grandma = new Grandma();
+
 
     public static String getPlayerID() {
         return playerID;
     }
 
     public static void setPlayerID(String playerID) {
-        BigCookie.playerID = playerID;
+        CookieClicker.playerID = playerID;
     }
 
     public static double getCookies() {
@@ -17,6 +25,6 @@ public class BigCookie {
     }
 
     public static void setCookies(double cookies) {
-        BigCookie.cookies = cookies;
+        CookieClicker.cookies = cookies;
     }
 }
